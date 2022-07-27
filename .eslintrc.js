@@ -13,5 +13,8 @@ module.exports = {
   rules: {
     'space-before-function-paren': 0,
     'vue/no-multiple-template-root': 0,
+    'quotes': 'off',
+    'semi': 'off',
+    'comma-dangle': 'off'
   }
 }

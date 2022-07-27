@@ -1,6 +1,7 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h3>Options API 一般是將資料狀態儲存在 data()，在畫面中才能以雙向綁定的方式更改資料，改為使用 Pinia 後，要運用其中</h3>
+    <h3>資料並呈現在畫面中，就可以使用 computed，這樣當狀態有更動時可以即時更新畫面中的資料</h3>
   </div>
   <!-- F12 查看 About View -> Components 選項改為 Pinia, 檢視參數也可修改 -->
   {{ name }}
