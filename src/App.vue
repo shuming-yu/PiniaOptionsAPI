@@ -1,10 +1,16 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">AboutOptionsAPI</router-link> |
-    <router-link to="/about2">AboutCompositionAPI</router-link>
+    <router-link to="/">
+      Home
+    </router-link> |
+    <router-link to="/about">
+      AboutOptionsAPI
+    </router-link> |
+    <router-link to="/about2">
+      AboutCompositionAPI
+    </router-link>
   </nav>
-  <router-view/>
+  <router-view />
 </template>
 
 <style lang="scss">

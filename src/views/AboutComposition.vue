@@ -8,21 +8,41 @@
   {{ user.getUserNmae }}
   <br>
   {{ user.wallet }}
+  <br>
+  {{ name }},{{ getUserNmae }},{{ wallet }}
 
-  <button type="button" @click="user.updateName">按我!!</button>
+  <button
+    type="button"
+    @click="updateName"
+  >
+    按我!!
+  </button>
 </template>
 
 <script>
 import userStore from "@/stores/user";
+import { storeToRefs } from 'pinia';
 
 // Composition API
 export default {
   setup() {
     const user = userStore();
     // reactive
-    user.name = '帥哥Ben';
+    // user.name = '帥哥Ben';
+
+    // 解構形式取出
+    const { name, wallet, getUserNmae } = storeToRefs(user); // 載入定義的 store
+    console.log(name.value);
+    name.value = 'Tommy';
+
+    // 方法不需要雙向綁定, 可直接從 user 取出
+    const { updateName } = user;
     return {
-      user
+      user,
+      name,
+      wallet,
+      getUserNmae,
+      updateName
     }
   }
 }

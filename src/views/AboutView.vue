@@ -10,7 +10,12 @@
   <br>
   {{ wallet }}
 
-  <button type="button" @click="updateName">按我!!</button>
+  <button
+    type="button"
+    @click="updateName"
+  >
+    按我!!
+  </button>
 </template>
 
 <script>
