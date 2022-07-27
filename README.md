@@ -12,5 +12,6 @@
 
 ## 課程需要安裝套件
 
-- Pinia : https://www.npmjs.com/package/pinia
+- ESLint : https://israynotarray.com/javascript/20210218/4003233584/
 
+- Pinia : https://www.npmjs.com/package/pinia
