@@ -8,10 +8,12 @@
   {{ getUserNmae }}
   <br>
   {{ wallet }}
+
+  <button type="button" @click="updateName">按我!!</button>
 </template>
 
 <script>
-import { mapState } from 'pinia'
+import { mapState, mapActions } from 'pinia'
 import userStore from '@/stores/user'
 
 // Options API
@@ -21,6 +23,9 @@ export default {
     // 1. Store
     // 2. 要帶入的 State, Getters
     ...mapState(userStore, ['name', 'getUserNmae', 'wallet'])
+  },
+  methods: {
+    ...mapActions(userStore, ['updateName'])
   }
 }
 </script>
