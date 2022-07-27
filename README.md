@@ -1,24 +1,16 @@
-# piniaoptions
+# PiniaOptions API
 
-## Project setup
-```
-npm install
-```
+## Pinia 課程資源
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- Pinia 官方網站：https://pinia.vuejs.org/
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 課程實戰範例
 
-### Lints and fixes files
-```
-npm run lint
-```
+- 初始範例 : https://github.com/Wcc723/vue3-pinia-sample/tree/93c7fd4ac0ca59bbc3e41bbb98a4dbdaee16d5af
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- 各階段流程參考 : https://github.com/Wcc723/vue3-pinia-sample/commits/master
+
+## 課程需要安裝套件
+
+- Pinia : https://www.npmjs.com/package/pinia
+
