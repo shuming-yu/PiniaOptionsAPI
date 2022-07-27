@@ -13,17 +13,20 @@
 
   <button
     type="button"
-    @click="updateName">
+    @click="updateName"
+  >
     按我!!
   </button>
   <button
     type="button"
-    @click="updateData">
+    @click="updateData"
+  >
     updateData
   </button>
   <button
     type="button"
-    @click="reset">
+    @click="reset"
+  >
     reset
   </button>
 </template>
@@ -38,7 +41,7 @@ export default {
     const user = userStore();
     // 方法一 : reactive 格式
     // user.name = '帥哥Ben';
-    
+
     // 方法二 : ref 形式, 解構形式取出
     const { name, wallet, getUserNmae } = storeToRefs(user); // 載入定義的 store
     console.log(name.value);
